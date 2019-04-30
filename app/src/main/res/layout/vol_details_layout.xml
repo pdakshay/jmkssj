@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/vol_profile_from_server"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    />
+
+                <View
+                    android:id="@+id/vol_profile_view"
+                    android:background="#fff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/vol_profile_from_server"/>
+
+                <TextView
+                    android:id="@+id/vol_name_from_server"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp"
+                    android:text="akshay Shrivastava"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/vol_profile_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/vol_mob_heading"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Mobile :-"
+                    android:layout_below="@id/vol_name_from_server"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/vol_profile_view"/>
+
+
+                <TextView
+                    android:id="@+id/vol_number_from_server"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="7525954846"
+                    android:layout_below="@id/vol_name_from_server"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/vol_mob_heading"/>
+
+
+                <TextView
+                    android:id="@+id/vol_email_heading"
+                    android:textSize="18sp"
+                    android:layout_toLeftOf="@id/vol_email"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Email :-"
+                    android:layout_below="@+id/vol_mob_heading"
+                    />
+
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/vol_email"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="akshayrns08@gmail.com"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/vol_mob_heading"
+                    />
+
+
+        </RelativeLayout>
+</android.support.v7.widget.CardView>

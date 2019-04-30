@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberShip"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/AppTheme.ActionBar"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/imageBack_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/r_title"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:id="@+id/headerSlider"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/toolbar_home">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ragistration_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <Button
+            android:layout_below="@id/textView"
+            android:id="@+id/btn_register"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d67601"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/headerSlider"
+        android:fillViewport="true">
+    <RelativeLayout
+        android:id="@+id/myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Volunteer Name-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/memberName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Name"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Volunteer Phone Number-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_phone"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textInput_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/memberPhone"
+                android:padding="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Volunteer Email Id-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_email"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textInput_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/memberEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Email id"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--Volunteer Address-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_address"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textInput_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/memberAddress"
+                android:padding="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Address"
+                android:inputType="text" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/textInput_address"
+            android:id="@+id/gender_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+
+        </RadioGroup>
+
+
+        <!--Volunteer Address-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_fromDate"
+            android:layout_below="@id/gender_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:editable="false"
+                android:cursorVisible="false"
+                android:id="@+id/formDate"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textColorHint="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="none" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Volunteer Address-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_DateOfBirth"
+            android:layout_below="@id/textInput_fromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:hint="DateOfBirth"
+                android:id="@+id/Birthday"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textColorHint="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/formDate"
+                android:layout_below="@+id/formDate"
+                android:ems="10"
+                android:inputType="none" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

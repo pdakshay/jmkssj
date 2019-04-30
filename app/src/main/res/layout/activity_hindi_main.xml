@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_wth_brd_main"
+    tools:context=".HindiMain">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="1"
+            android:text="जय माँ काली सेवा समिति "
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/headerSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbar_home"
+        android:background="@color/colorPrimary">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/headerSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        >
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_become_a_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="0.65"
+                        android:background="@color/darkblue_dark"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:id="@+id/viewMembership"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            >
+
+
+                            <ImageView
+                                android:id="@+id/imgView_become_a_member"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_drawable_register"
+                                android:scaleType="centerInside"
+                                android:layout_marginLeft="10dp"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@id/imgView_become_a_member"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="सदस्य बनें  "
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_timeline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="0.65"
+                        android:background="@color/red"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_drawable_about"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgView1"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="हमारे बारे मैं"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_friends"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.55"
+                        android:background="@color/yellow"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:id="@+id/viewDonation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_drawable_donation"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgView2"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="दान"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.55"
+                        android:background="@color/lime"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+                            <ImageView
+                                android:id="@+id/imgView3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_drawable_event"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgView3"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="स्पर्धाएं "
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_music"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:background="@color/green"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_drawable_gallery"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgView4"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="गैलरी "
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:background="@color/blue"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:id="@+id/viewFounder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView5"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_drawable_founder"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgView5"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="संस्थापक"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.55"
+                        android:background="@color/darkblue"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView6"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_drawable_contact"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgView6"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="हमसे संपर्क करें"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_weather"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.55"
+                        android:background="@color/darkviolet"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView7"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_drawable_team"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgView7"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="हमारे सदस्य"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:background="@color/violet"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:id="@+id/viewSuggestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/imgView8"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_drawable_suggestion"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgView8"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="सुझाव"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/rellay_location_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="0.65"
+                        android:background="@color/blue"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <RelativeLayout
+                            android:id="@+id/viewMap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imgView_location_map"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:adjustViewBounds="true"
+                                android:padding="8dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_drawable_map"
+                                android:scaleType="centerInside"
+                                android:layout_marginLeft="10dp"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgView_location_map"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="स्थान "
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

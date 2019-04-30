@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_wth_brd"
+    tools:context=".Donation">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/AppTheme.ActionBar"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/imageBack_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/d_title"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/toolbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+
+        </RelativeLayout>
+</RelativeLayout>

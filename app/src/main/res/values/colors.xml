@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0f5aa9</color>
+    <color name="colorPrimaryDark">#1c6996</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="startblue">#09c6dF</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="graylight">#fafafa</color>
+
+    <color name="red">#F15050</color>
+    <color name="red_dark">#322f2f</color>
+    <color name="yellow">#EED45A</color>
+    <color name="yellow_dark">#d4bb46</color>
+    <color name="lime">#BCE24A</color>
+    <color name="lime_dark">#9dbf35</color>
+    <color name="green">#48D26B</color>
+    <color name="green_dark">#36b957</color>
+    <color name="blue">#87d6d7</color>
+    <color name="blue_dark">#37c4c6</color>
+    <color name="darkblue">#5a9cee</color>
+    <color name="darkblue_dark">#417eca</color>
+    <color name="darkviolet">#7E50F1</color>
+    <color name="darkviolet_dark">#683dd4</color>
+    <color name="violet">#D65AEE</color>
+    <color name="violet_dark">#b33ec9</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="Wheat">#5dff40</color>
+    <color name="back">#c10f97</color>
+    <color name="Wheat2">#ffcc40</color>
+    <color name="back2">#075056</color>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Founder"
+    android:background="@drawable/bg_wth_brd">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/AppTheme.ActionBar"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/imageBack_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/f_title"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar_home"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/founder_bg">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        app:srcCompat="@drawable/f_profile_img" />
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_below="@id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/founderName"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Akshay Shrivastava"
+            android:textColor="@color/red_dark"
+            android:textSize="22sp"
+            android:typeface="serif"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_below="@+id/founderName"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+            android:textColor="@color/red_dark"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/founder_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/founder_source_btn"
+            android:fontFamily="monospace"
+            android:text="Call"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/founder_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/founder_call"
+            android:background="@drawable/founder_source_btn"
+            android:fontFamily="monospace"
+            android:text="Facebook"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/founder_insta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/founder_fb"
+            android:background="@drawable/founder_source_btn"
+            android:fontFamily="monospace"
+            android:text="Instagram"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--RelativeLayout
+        android:id="@+id/rel"
+        android:layout_below="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/founder_bg">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="145dp"
+            app:srcCompat="@drawable/ic_drawable_founder"
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/s1"
+            app:civ_border_color="@android:color/transparent"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dp" />
+    </RelativeLayout-->
+
+
+
+</RelativeLayout>
